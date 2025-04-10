@@ -10,7 +10,7 @@
 1. Thu thập và làm sạch dữ liệu
 2. Phân tích khám phá dữ liệu (EDA)
 3. Trích xuất đặc trưng
-4. Xây dựng và huấn luyện mô hình DecisionTreeClassifier
+4. Xây dựng và huấn luyện mô hình RandomForestClassifier
 5. Đánh giá mô hình
 6. Triển khai kết quả
 
