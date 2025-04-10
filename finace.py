@@ -23,6 +23,7 @@ df= pd.read_csv("train.csv")
 x = df.iloc[:,1:-1]
 y = df.iloc[:,-1:]
 
+
 #data split
 x_train, x_test, y_train,y_test = train_test_split(x,y,test_size=0.3,random_state=42)
 
@@ -65,11 +66,11 @@ tranfo = ColumnTransformer(transformers=[
 
 train = Pipeline(steps=[
     ("xuly",tranfo),
-    ("train",DecisionTreeClassifier())
+    ("train",RandomForestClassifier(random_state=42))
 ])
 train.fit(x_train,y_train)
 result = train.predict(x_test)
 print(classification_report(y_test,result))
-#   accuracy                           0.80     76605
-#    macro avg       0.55      0.56      0.55     76605
-# weighted avg       0.82      0.80      0.81     76605
+#  accuracy                           0.89     76605
+#    macro avg       0.76      0.52      0.50     76605
+# weighted avg       0.86      0.89      0.84     76605
