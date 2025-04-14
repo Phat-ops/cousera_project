@@ -1,6 +1,6 @@
 # Model Machine Learning dự đoán rủi ro khoản vay
 ## 📊 Dữ liệu sử dụng
-- **Nguồn**: Cousera
+- **Nguồn Data**: Cousera
 - **Thông tin**: Bao gồm các trường như 'LoanID', 'Age', 'Income', 'LoanAmount', 'CreditScore',
                                          'MonthsEmployed', 'NumCreditLines', 'InterestRate', 'LoanTerm',
                                          'DTIRatio', 'Education', 'EmploymentType', 'MaritalStatus',
